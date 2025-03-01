@@ -1,0 +1,233 @@
+/* Uniformité de la page (ombres uniformes et bordures de taille uniforme) : 
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+*/
+/* Organisation centrale comme tous les sites de cuisine :
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+*/
+/* Faire ressortir les blocs de contenu :
+    background-color: white;
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+/* Header */
+header {
+    background-color: #2c3e50;
+    padding: 3rem 1.5rem;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    margin: 0 0 1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+#rating-container { /* Pris sur Marmiton */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: white; 
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    min-width: 180px;
+}
+
+.info-item img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+}
+.description {
+    background-color: white;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+/* Comment rendre ce texte plus lisible/agréabl ? (line-height plus grand, marges plus petites en haut, plus grandes en bas)*/
+.description h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    margin-top: 0;
+}
+.description p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Séléction du nombre de personnes */
+.personnes-selector {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.personnes-selector h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.personnes-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.personnes-btn {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer; /* Propriété CSS interessante que je ne connaissais pas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+.personnes-btn:hover {
+    background-color: #2c3e50;
+}
+
+#personnes-display {
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-width: 30px;
+}
+
+.personnes-label {
+    color: #666;
+}
+
+/* Ingredients */
+.ingredients {
+    background-color: white;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.ingredients h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    margin-top: 0;
+    text-align: center;
+}
+
+.ingredients-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredients-image {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.ingredients-list {
+    flex: 1;
+    min-width: 250px;
+    padding-left: 1.5rem;
+}
+
+.ingredients-list li {
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    padding: 1.5rem;
+    color: #ecf0f1;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#kofy-note { /* Directement pris de ma base de code personnelle destinée aux sites webs hébergés sur mon infrastructure */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    line-height: 1.6;
+}
+/* Navbar */
+nav {
+width: 25px;
+height: 25px;
+
+line-height: 25px;
+text-align: center;
+
+border-radius: 5px;
+
+position: fixed;
+top: 1rem;
+left: 1rem;
+
+transition: 1s;
+
+overflow: hidden;
+}
+
+nav:hover {
+height: 35rem;
+width: 7rem;
+transition: 1s ease-in-out;
+
+border-radius: 10px;
+}
+
+nav::before {
+content: "x";
+opacity: 1;
+transition: 0.4s;
+}
+
+nav:hover:before {
+opacity: 0;
+transition: 0.4s;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Omelette Espagnole (Tortilla) - Recette Traditionnelle</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <!-- Importation des polices (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Omelette Espagnole</h1>
+        <div id="rating-container">
+            <img src="img/icons/etoiles.png" alt="Note: 4.6/5" class="rating">
+        </div>
+    </header>
+    
+    <section class="info">
+        <div class="info-item">
+            <img src="img/icons/timer.png" alt="Temps de préparation">
+            <span>40 min</span>
+        </div>
+        <div class="info-item">
+            <img src="img/icons/toque.png" alt="Niveau de difficulté">
+            <span>Facile</span>
+        </div>
+        <div class="info-item">
+            <img src="img/icons/monnaie.png" alt="Coût estimé">
+            <span>Bon marché</span>
+        </div>
+    </section>
+    
+    <section class="description">
+        <h2>À propos de l'omelette espagnole</h2>
+        <p>L'omelette espagnole, connue sous le nom de "tortilla de patatas", est l'un des joyaux de la gastronomie espagnole. Ce plat rustique et savoureux incarne la simplicité et la générosité de la cuisine méditerranéenne. Originaire du nord de l'Espagne, cette recette aurait été créée au XIXe siècle pendant les guerres carlistes, lorsque le général Tomás de Zumalacárregui cherchait un plat nourrissant et facile à préparer pour ses troupes.</p>
+        <p>Préparée avec des ingrédients simples mais de qualité - pommes de terre, œufs et oignons - cette omelette épaisse et moelleuse peut être servie à toute heure de la journée. En Espagne, on la déguste aussi bien chaude que froide, en tapas, en entrée ou en plat principal. La texture parfaite d'une tortilla est un sujet de débat passionné parmi les Espagnols : certains la préfèrent bien cuite et ferme, d'autres légèrement baveuse au centre pour plus d'onctuosité.</p>
+        <p>Chaque région d'Espagne possède sa propre variante de ce plat emblématique. Dans certaines provinces, on y ajoute des poivrons, des petits pois ou même du chorizo. À Barcelone, on peut la trouver servie en sandwich (bocadillo de tortilla), tandis qu'à Madrid, elle est souvent accompagnée d'une salade verte et d'un verre de vin rouge. Quelle que soit la façon dont vous choisissez de la déguster, l'omelette espagnole reste un symbole de convivialité et de partage dans la culture culinaire espagnole.</p>
+    </section>
+    
+    <section class="carroussel">
+        <!-- Ce serait bien de mettre un carroussel avec les images d'omelette qu'on a -->
+    </section>
+    
+    <section class="ingredients">
+        <h2>Ingrédients</h2>
+        <div class="ingredients-container">
+            <img src="img/icons/ingredients.png" alt="Ingrédients de l'omelette espagnole" class="ingredients-image">
+            <ul class="ingredients-list">
+                <li><span id="eggs-count" data-base-value="4">4</span> œufs frais de taille moyenne</li>
+                <li><span id="potatoes-count" data-base-value="3">3</span> pommes de terre moyennes (type Charlotte)</li>
+                <li><span id="onion-count" data-base-value="1">1</span> gros oignon doux</li>
+                <li><span id="oil-amount" data-base-value="20">20</span> cl d'huile d'olive extra vierge</li>
+                <li>Sel fin de mer</li>
+                <li>Poivre noir fraîchement moulu</li>
+                <li>Une pincée de paprika (optionnel)</li>
+            </ul>
+        </div>
+        <div class="personnes-controls">
+            <button id="decrease-personnes" class="personnes-btn">-</button>
+            <span id="personnes-display">4</span>
+            <button id="increase-personnes" class="personnes-btn">+</button>
+            <span class="personnes-label">personnes</span>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Recette inspirée par Marmiton</p>
+        <p id="kofy-note">Sauf mention contraire, tous le contenu disponible sur "kofy.dev" est soumis à une license AGPL V3-or-later</p>
+    </footer>
+
+</body>
+</html>
