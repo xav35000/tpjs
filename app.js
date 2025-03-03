@@ -18,7 +18,7 @@ function plus() {
   personnes += 1
 }
 
-quantites.map(e => e+1)
+quantites = quantites.map(e => e+1)
 personnes += 1
 
 console.log(quantites)
