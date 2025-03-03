@@ -54,7 +54,7 @@ nav:hover {
 height: 35rem;
 width: 7rem;
 transition: 1s ease-in-out;
-
+border-color: red;
 border-radius: 10px;
 }
 
