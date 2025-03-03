@@ -21,4 +21,6 @@ function plus() {
 quantites.map(e => e+1)
 personnes += 1
 
+console.log(quantites)
+
 update()
