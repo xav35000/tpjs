@@ -38,11 +38,11 @@ height: 25px;
 
 line-height: 25px;
 text-align: center;
-
+border-color: red;
 border-radius: 5px;
 
 position: fixed;
-top: 1rem;
+top: 10rem;
 left: 1rem;
 
 transition: 1s;
