@@ -1,8 +1,15 @@
 persDisplay = document.getElementById('personnes')
+quantDisplay = [...document.querySelectorAll('.quantite')]
 personnes = persDisplay.innerText
-quantites = [...document.querySelectorAll('.quantite')]
+quantites = quantDisplay.map(e => e.innerText)
 
-console.log(personnes)
+console.log(quantites)
 
 function update() {
+  persDisplay.innerText = personnes
+
+  quantites.forEach((element) => {
+    element.inner
+  })
+  
 }
