@@ -13,12 +13,12 @@ function update() {
 
 
 function plus() {
-  personnes += 1
+  personnes += window.event.ctrlKey ? 5 : 1
   update()
 }
 
 
 function moins() {
-  personnes -= 1
+  personnes = personnes -= window.event.ctrlKey ? 5 : 1
   update()
 }
