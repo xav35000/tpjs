@@ -230,38 +230,6 @@ footer {
     margin-top: 0.8rem;
     line-height: 1.6;
 }
-/* Navbar */
-nav {
-width: 25px;
-height: 25px;
-
-line-height: 25px;
-text-align: center;
-
-border-radius: 5px;
-
-position: fixed;
-top: 1rem;
-left: 1rem;
-
-transition: 1s;
-
-overflow: hidden;
-}
-
-nav:hover {
-height: 35rem;
-width: 7rem;
-transition: 1s ease-in-out;
-
-border-radius: 10px;
-}
-
-nav::before {
-content: "x";
-opacity: 1;
-transition: 0.4s;
-}
 
 nav:hover:before {
 opacity: 0;
