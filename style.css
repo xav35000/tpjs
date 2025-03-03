@@ -32,6 +32,42 @@ header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
 }
+nav {
+width: 25px;
+height: 25px;
+
+line-height: 25px;
+text-align: center;
+
+border-radius: 5px;
+
+position: fixed;
+top: 1rem;
+left: 1rem;
+
+transition: 1s;
+
+overflow: hidden;
+}
+
+nav:hover {
+height: 35rem;
+width: 7rem;
+transition: 1s ease-in-out;
+
+border-radius: 10px;
+}
+
+nav::before {
+content: "x";
+opacity: 1;
+transition: 0.4s;
+}
+
+nav:hover:before {
+opacity: 0;
+transition: 0.4s;
+}
 #rating-container { /* Pris sur Marmiton */
     display: flex;
     justify-content: center;
