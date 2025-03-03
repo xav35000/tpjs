@@ -11,5 +11,14 @@ function update() {
   quantites.forEach((element, index) => {
     quantDisplay[index].innerText = element.toString()
   })
-  
 }
+
+
+function plus() {
+  personnes += 1
+}
+
+quantites.map(e => e+1)
+personnes += 1
+
+update()
