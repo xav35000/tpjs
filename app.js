@@ -7,14 +7,18 @@ function update() {
   persDisplay.innerText = personnes
 
   quantites.forEach((element, index) => {
-    quantDisplay[index].innerText = (element * personnes).toString()
+    quantDisplay[index].innerText = Math.round(element * personnes).toString()
   })
 }
 
 
 function plus() {
   personnes += 1
+  update()
+}
 
-  
-  
+
+function moins() {
+  personnes -= 1
+  update()
 }
