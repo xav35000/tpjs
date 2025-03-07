@@ -57,10 +57,12 @@ border-radius: 10px;
 }
 
 nav::before {
-content: url("/img/icons/burger-bar.png");
+background-image: url('/img/icons/burger-bar.png');
+background-size: 32px 32px;
+display: inline-block;
+width: 32px; 
 height: 32px;
-width: 32px;
-opacity: 1;
+content:"";
 transition: 0.4s;
 }
 
