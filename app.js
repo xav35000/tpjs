@@ -25,6 +25,6 @@ function moins() {
 
 
 
-document.querySelector('#personnes').addEventListener('mouseover' => (event) {
+document.querySelector('#personnes').addEventListener('mouseover', (event) => {
         alert('AA')
 });
