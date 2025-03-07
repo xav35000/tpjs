@@ -216,7 +216,7 @@ transition: 0.4s;
 }
 
 /* Préparation*/
-.preparation {
+.recette {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
