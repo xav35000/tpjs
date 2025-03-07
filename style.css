@@ -35,18 +35,16 @@ header h1 {
 nav {
 width: 25px;
 height: 25px;
-
+font-family: 'Roboto', serif;
+font-size: 1.5rem;
 line-height: 25px;
 text-align: center;
 border-color: red;
 border-radius: 5px;
-
 position: fixed;
 top: 12rem;
 left: 1.5rem;
-
 transition: 1s;
-
 overflow: hidden;
 }
 
