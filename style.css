@@ -216,7 +216,7 @@ transition: 0.4s;
 }
 
 /* Préparation*/
-.recette {
+.preparation {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -227,6 +227,13 @@ transition: 0.4s;
     max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.preparation h2 {
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+    margin-top: 0;
+    text-align: center;
 }
 
 /* Footer */
