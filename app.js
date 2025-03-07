@@ -29,9 +29,3 @@ document.querySelector('#personnes').addEventListener('mouseover', (event) => {
         alert('AA')
 });
 
-<select name="regime">
-    <option value="externe">externe</option>
-    <option value="demi">demi-pensionnaire</option>
-    <option value="interne">interne</option>
-</select>
-<button onclick="traitement()">Je valide</button>
