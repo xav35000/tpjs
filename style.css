@@ -50,14 +50,14 @@ overflow: hidden;
 
 nav:hover {
 height: 35rem;
-width: 7rem;
+width: 15rem;
 transition: 1s ease-in-out;
 border-color: red;
 border-radius: 10px;
 }
 
 nav::before {
-content: "x";
+content: "/img/icons/burger-bar.png";
 opacity: 1;
 transition: 0.4s;
 }
