@@ -19,6 +19,12 @@ function plus() {
 
 
 function moins() {
-  personnes = personnes -= window.event.ctrlKey ? 5 : 1
+  personnes = personnes - window.event.ctrlKey ? 5 : 1
   update()
 }
+
+
+
+document.querySelector('#personnes').addEventListener('mouseover' => (event) {
+        alert('AA')
+});
