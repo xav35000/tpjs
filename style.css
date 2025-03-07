@@ -264,3 +264,9 @@ nav:hover:before {
 opacity: 0;
 transition: 0.4s;
 }
+
+
+#derou {
+    position: absolute;
+    width: 1px;
+}
