@@ -23,16 +23,7 @@ function moins() {
   update()
 }
 
-
-
-document.querySelector('#personnes').addEventListener('mouseover', (event) => {
-        alert('AA')
-});
-
-<script>
-    function traitement() {
-        // il n'y a qu'une seule réponse donc on met que 'querySelector' :        
+function traitement() {  
         var reponse = document.querySelector('option:checked').value
         alert(reponse)
-    }
-</script>
+}
