@@ -57,7 +57,7 @@ border-radius: 10px;
 }
 
 nav::before {
-content: "/img/icons/burger-bar.png";
+content: url("/img/icons/burger-bar.png");
 opacity: 1;
 transition: 0.4s;
 }
