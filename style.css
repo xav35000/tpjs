@@ -269,5 +269,5 @@ transition: 0.4s;
 #derou {
     position: absolute;
     width: 1px;
-    left: 0;
+    overflow-wrap: break-word;
 }
