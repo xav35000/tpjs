@@ -1,16 +1,12 @@
-persDisplay = document.getElementById('regime')
+perSelect = document.getElementById('nombre')
 quantDisplay = [...document.querySelectorAll('.quantite')]
-personnes = +persDisplay.innerText
+personnes = +persSelect.value
 quantites = quantDisplay.map(e => (+e.innerText) / personnes)
 
 function update() {
-  persDisplay.innerText = personnes
+  personnes = +persSelect.value;
 
   quantites.forEach((element, index) => {
     quantDisplay[index].innerText = Math.round(element * personnes).toString()
   })
-}
-function traitement() {  
-        var reponse = document.querySelector('option:checked').value
-        alert(reponse)
 }
