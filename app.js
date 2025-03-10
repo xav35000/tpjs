@@ -10,19 +10,6 @@ function update() {
     quantDisplay[index].innerText = Math.round(element * personnes).toString()
   })
 }
-
-
-function plus() {
-  personnes += window.event.ctrlKey ? 5 : 1
-  update()
-}
-
-
-function moins() {
-  personnes = personnes - window.event.ctrlKey ? 5 : 1
-  update()
-}
-
 function traitement() {  
         var reponse = document.querySelector('option:checked').value
         alert(reponse)
