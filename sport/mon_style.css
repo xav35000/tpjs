@@ -45,3 +45,9 @@ h3 {
 footer {
 	text-align: center;
 }
+#kofy-note { /* Directement pris de ma base de code personnelle destinée aux sites webs hébergés sur mon infrastructure */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    line-height: 1.6;
+}
