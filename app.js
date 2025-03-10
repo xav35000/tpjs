@@ -7,7 +7,7 @@ quantites = quantDisplay.map(e => (+e.innerText) / personnes); // On stocke les 
 function update() { // La fonction étant liée à l'événement 'onchange' du selecteur de personnes. Elle s'éxécutera donc à chaque de changement du nombre de personnes
   personnes = +persSelect.value; // On récupère la nouvelle valeur du selecteur, et donc le nombre de personnes
 
-  quantites.forEach((element, index) => {
-    quantDisplay[index].innerText = Math.ceil(element * personnes).toString();
-  });
+  quantites.forEach((element, index) => { // On parcourt la liste des quantités pour une personne en stockant chaque valeur dans la variable element et chaque index dans la variable index
+    quantDisplay[index].innerText = Math.ceil(element * personnes).toString(); // On change l'innerText de l'élément concerné en retournant l'arrondi à l'entier superieur (pour que la valeur n'ait pas de virgule et qu'elle soit toujours superieure à 0) du produit de la quantité pour une personne et du nombre de personnes
+  }); // On répète l'instruction
 }
