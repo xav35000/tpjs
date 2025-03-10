@@ -1,4 +1,4 @@
-persDisplay = document.getElementById('personnes')
+persDisplay = document.getElementById('regime')
 quantDisplay = [...document.querySelectorAll('.quantite')]
 personnes = +persDisplay.innerText
 quantites = quantDisplay.map(e => (+e.innerText) / personnes)
