@@ -13,11 +13,11 @@
 */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Nous mettons une couleur de fond au site */
     color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    margin: 0; /* Nous placons le body */
+    padding: 0; /* Nous placons le body */
+    line-height: 1.6; /* Nous parametrons l'inter-ligne */
 }
 
 /* Header */
