@@ -1,12 +1,13 @@
-persSelect = document.getElementById('nombre')
-quantDisplay = [...document.querySelectorAll('.quantite')]
-personnes = +persSelect.value
-quantites = quantDisplay.map(e => (+e.innerText) / personnes)
+persSelect = document.getElementById('nombre');
+persSelect.value = '4';
+quantDisplay = [...document.querySelectorAll('.quantite')];
+personnes = +persSelect.value;
+quantites = quantDisplay.map(e => (+e.innerText) / personnes);
 
 function update() {
   personnes = +persSelect.value;
 
   quantites.forEach((element, index) => {
-    quantDisplay[index].innerText = Math.round(element * personnes).toString()
+    quantDisplay[index].innerText = Math.round(element * personnes).toString();
   })
 }
