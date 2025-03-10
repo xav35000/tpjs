@@ -8,6 +8,6 @@ function update() {
   personnes = +persSelect.value;
 
   quantites.forEach((element, index) => {
-    quantDisplay[index].innerText = Math.max(1, (Math.round(element * personnes).toString()))
+    quantDisplay[index].innerText = Math.ceil(element * personnes).toString()
   })
 }
