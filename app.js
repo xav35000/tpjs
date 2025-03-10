@@ -1,4 +1,4 @@
-perSelect = document.getElementById('nombre')
+persSelect = document.getElementById('nombre')
 quantDisplay = [...document.querySelectorAll('.quantite')]
 personnes = +persSelect.value
 quantites = quantDisplay.map(e => (+e.innerText) / personnes)
